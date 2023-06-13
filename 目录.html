@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气查询</title>
+    <link rel="stylesheet" href="./weather.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-side">
+            <div class="gradient"></div>
+            <div class="date-container">
+                <h1 class="date-dayname" id="date-dayname">星期一</h1>
+                <span class="date-day" id="date-day">2023-6-12</span>
+                <span class="iconfont icon-position date-location" id="location">镇江</span>
+            </div>
+
+            <div class="weather-conteiner">
+                <span class="iconfont" id="weather-l">&#xf020d;</span>
+                <div class="weather-temp" id="weather-temp">25℃</div>
+                <div class="waeather-desc" id="weather-desc">晴天</div>
+            </div>
+        </div>
+
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <!-- <div class="pm clear">
+                         <span class="title">PM2.5</span> 
+                         <span class="value" id="pm">00</span>
+                    </div>  -->
+                    <div class="humidity clear">
+                        <span class="title">湿度</span>
+                        <span class="value" id="humidity">00</span>
+                    </div>
+                    <div class="wind clear">
+                        <span class="title">风向</span>
+                        <span class="value" id="wind">00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="week-container">
+                <ul class="week-list">
+                    <li id="day1">
+                        <span class="iconfont">&#xf0210;</span>
+                        <span class="day-name">星期一</span>
+                        <span class="day-temp">25℃</span>
+                    </li>
+
+                    <li id="day2">
+                        <span class="iconfont">&#xf020a;</span>
+                        <span class="day-name">星期二</span>
+                        <span class="day-temp">25℃</span>
+                    </li>
+
+                    <li id="day3">
+                        <span class="iconfont">&#xf0210;</span>
+                        <span class="day-name">星期三</span>
+                        <span class="day-temp">25℃</span>
+                    </li>
+
+                    <li id="day4">
+                        <span class="iconfont">&#xf020a;</span>
+                        <span class="day-name">星期四</span>
+                        <span class="day-temp">25℃</span>
+                    </li>
+
+                    <li id="day5">
+                        <span class="iconfont">&#xf0210;</span>
+                        <span class="day-name">星期五</span>
+                        <span class="day-temp">25℃</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="location-container">
+                <input type="text" placeholder="位置" id="city">
+                <button class="location-button" id="location-button">
+                    <span class="iconfont icon-position">查询</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
